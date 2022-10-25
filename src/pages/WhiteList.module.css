@@ -1,0 +1,17 @@
+html .whitelist {
+  background-color: darkgrey;
+}
+
+.whitelist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: darkgrey;
+}
+
+.footer {
+  width: 100%;
+  /* margin-top: -3rem; */
+}

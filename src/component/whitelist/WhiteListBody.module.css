@@ -1,0 +1,74 @@
+.fullpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0px 6%;
+  margin-top: -5rem;
+}
+.tasks {
+  width: 40rem;
+  margin-top: -10rem;
+  transform: translateX(3rem);
+}
+
+.tasks h2 {
+  font-size: 1.3rem;
+}
+
+.tasks ul {
+  list-style-type: circle;
+  font-size: 1.3rem;
+}
+
+.tasks li {
+  font-weight: 400;
+  font-size: 1.09rem;
+  transform: translateX(-1.3rem);
+}
+.tasks a {
+  z-index: 100;
+  text-decoration: none;
+  color: blue;
+  transition: 0.1s linear;
+}
+.tasks a:hover {
+  color: rgb(201, 255, 23);
+}
+
+.potogirl {
+  width: 80%;
+  transform: translate(0rem, 3rem);
+}
+/* .potogirl img {
+  scale: 50%;
+} */
+
+.formbody {
+  width: 20%;
+  margin-top: 8rem;
+  transform: translateX(-8rem);
+}
+
+@media only screen and (max-width: 40rem) {
+  .ppp {
+    display: none;
+  }
+
+  .fullpage {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .tasks {
+    width: 100%;
+    margin-top: 0rem;
+    transform: translateX(0rem);
+  }
+
+  .formbody {
+    width: 100%;
+    transform: translateX(0rem);
+    margin: 2rem 0rem 1rem 2.5rem;
+  }
+}

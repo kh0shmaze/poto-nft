@@ -1,0 +1,147 @@
+form {
+  background-color: rgb(255, 255, 255);
+  width: 20rem;
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0);
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.formhead {
+  background-color: rgba(57, 57, 255, 0.671);
+  height: 5rem;
+  border-radius: 8px 8px 0px 0px;
+  align-items: center;
+}
+.formhead h2 {
+  font-size: 1.5rem;
+  margin: auto;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-left: 0.6rem;
+  padding-bottom: 0.4rem;
+}
+
+.telid input,
+.twitterid input,
+.wallet input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  width: 80%;
+  height: 2rem;
+  /* margin-left: 0.6rem; */
+  margin-left: 10%;
+  margin-right: 10%;
+  border: none;
+  border-bottom: 2px solid blue;
+  font-size: 1rem;
+}
+
+.telid input:focus,
+.twitterid input:focus,
+.wallet input:focus {
+  outline: none;
+  /* border: 2px solid blue;
+  border-radius: 4px; */
+}
+
+.telid,
+.twitterid,
+.wallet {
+  padding-top: 2rem;
+}
+
+.wallet {
+  padding-bottom: 2rem;
+}
+
+.metamask {
+  transform: translateY(0.4rem);
+  padding-right: 0.3rem;
+}
+
+.btndiv {
+  display: flex;
+  justify-content: center;
+}
+.submit {
+  z-index: 2;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border-radius: 7px;
+  padding: 10px;
+  width: 12rem;
+  border: none;
+  background-color: rgba(57, 57, 255, 0.671);
+  /* box-shadow: 0px 0px 15px 2px rgb(148, 235, 226); */
+  /* transition-duration: 0.2s; */
+  font-weight: 700;
+}
+
+.submit:hover {
+  background-color: rgba(81, 81, 112, 0.986);
+  color: white;
+  font-weight: 500;
+}
+.submit:active {
+  transform: scale(0.95);
+}
+
+.formerror {
+  display: block;
+  text-align: center;
+  /* border: solid 1px red; */
+  width: 90%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+  margin-right: auto;
+  margin-left: auto;
+  animation: formiserror 0.5s linear forwards;
+}
+
+@keyframes formiserror {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    background-color: rgba(246, 33, 33, 0.829);
+    color: rgb(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.formok {
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+  margin-right: auto;
+  margin-left: auto;
+  animation: formisok 0.5s linear forwards;
+}
+@keyframes formisok {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    background-color: chartreuse;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 40rem) {
+  form {
+    background-color: rgb(255, 255, 255);
+    width: 100%rem;
+    border-radius: 8px;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0);
+    height: auto;
+    padding-bottom: 1rem;
+  }
+}

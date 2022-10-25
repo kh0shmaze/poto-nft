@@ -1,0 +1,141 @@
+.features {
+  z-index: 4;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 12% 0px 12%;
+  margin-top: 4rem;
+  /* background-image: url("../../image/Animated.svg");
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.disp {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .staking {
+  opacity: 0;
+} */
+
+.staking,
+.marketplace,
+.minigame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  margin-top: 6px;
+}
+.staking img {
+  scale: 0.8;
+  /* animation: imganimate 1s 1s ease-in forwards; */
+}
+
+/* @keyframes imganimate {
+  0% {
+    transform: translateY(20rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+} */
+
+.staking h1,
+.minigame h1,
+.marketplace h1 {
+  color: rgb(251, 250, 247);
+  text-align: center;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.staking h3,
+.marketplace h3,
+.minigame h3 {
+  color: rgb(153, 153, 152);
+  margin-top: -1rem;
+  width: 20rem;
+  text-align: center;
+  margin: auto;
+  line-height: 2rem;
+}
+
+.marketplace {
+  margin-top: -17px;
+}
+
+.marketplace img {
+  scale: 0.75;
+}
+
+.minigame {
+  margin-top: -17px;
+  padding: 0;
+}
+
+.minigame img {
+  scale: 0.75;
+}
+
+.testanimate .staking {
+  opacity: 0;
+  animation: test 0.3s 0.2s linear forwards 1;
+}
+
+@keyframes test {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10rem);
+    opacity: 1;
+  }
+}
+
+.testanimate .marketplace {
+  opacity: 0;
+  animation: test 0.3s 0.3s linear forwards 1;
+}
+
+@keyframes test {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10rem);
+    opacity: 1;
+  }
+}
+
+.testanimate .minigame {
+  opacity: 0;
+  animation: test 0.3s 0.4s linear forwards 1;
+}
+
+@keyframes test {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10rem);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  .features {
+    flex-direction: column;
+  }
+}

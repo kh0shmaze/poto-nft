@@ -1,0 +1,122 @@
+.header {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  padding: 0 3%;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #110047;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logopic {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+}
+
+.logoname {
+  margin-left: 1rem;
+  color: white;
+  min-width: 10rem;
+  /* font-weight: 900; */
+  font-size: 2.2rem;
+}
+
+.header ul,
+.header nav {
+  margin: 0;
+  margin-right: 5rem; /* bad az pak kardane header button*/
+  min-width: 20%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul {
+  padding-inline-start: 0;
+}
+
+.header li {
+  z-index: 2;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0rem 1rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-bottom: 0.3rem;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  border-bottom: 2px solid #54ecec;
+  color: #54ecec;
+}
+
+.btn {
+  z-index: 2;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: inherit;
+  border-radius: 7px;
+  padding: 10px;
+  width: 11rem;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 15px 2px rgb(148, 235, 226);
+  transition-duration: 0.2s;
+}
+.btn:hover {
+  box-shadow: 0px 0px 0px #110047;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+@media only screen and (max-width: 40rem) {
+  .header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    padding: 0 3%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #110047;
+  }
+
+  .logopic {
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+  }
+
+  .logoname {
+    margin: auto;
+    margin-left: 1rem;
+    color: white;
+    min-width: 8rem;
+    width: 5rem;
+    font-size: 1.1rem;
+  }
+
+  .header ul,
+  .header nav {
+    margin: 0;
+    min-width: 20%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

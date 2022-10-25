@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-top: white 2px solid; */
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: rgb(23, 23, 24);
+  /* transform: translateY(1rem); */
+}
+
+.footer h3 {
+  margin-left: 8rem;
+  color: darkgrey;
+  font-size: 0.5rem;
+  font-weight: 300;
+  scale: 2;
+}
+.footer a {
+  width: 10px;
+}
+.footer a:hover {
+  opacity: 0.9;
+}
+
+.icon {
+  margin-right: 5rem;
+}
+.icon a {
+  margin-right: 3rem;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 40rem) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer h3 {
+    margin-left: 0;
+    color: darkgrey;
+    font-size: 0.5rem;
+    font-weight: 300;
+    scale: 2;
+    transform: translateY(2rem);
+  }
+
+  .icon {
+    margin-right: 0rem;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+  }
+  .icon .telegram {
+    margin-right: 0rem;
+  }
+}
