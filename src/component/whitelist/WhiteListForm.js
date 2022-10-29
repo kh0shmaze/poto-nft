@@ -48,7 +48,7 @@ const WhiteListForm = () => {
     try {
       const response = await fetch(
         // "https://potonft-airdrop-default-rtdb.firebaseio.com/Airdrop.json",
-        "https://airdrops_user:zxEG2KJhWLV6Yo1PlwQnOVkq7zwTNctV@dpg-cdemj0ta4992md3khkjg-a.oregon-postgres.render.com/airdrops",
+        "postgres://airdrops_user:zxEG2KJhWLV6Yo1PlwQnOVkq7zwTNctV@dpg-cdemj0ta4992md3khkjg-a.oregon-postgres.render.com/airdrops",
         {
           method: "POST",
           body: JSON.stringify(userData),
